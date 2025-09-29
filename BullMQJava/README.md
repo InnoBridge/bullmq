@@ -12,7 +12,7 @@ rather than feature parity with the Node.js or Python versions.
 - Retrieve queue statistics (waiting/active/completed/failed counts)
 - Obliterate a queue and its data from Redis
 - Background worker that continuously consumes jobs
-- Maven project that targets Java 17
+- Maven project that targets the latest stable Java release (Java 21)
 
 ## Quick start
 
