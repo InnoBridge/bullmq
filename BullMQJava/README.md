@@ -20,6 +20,14 @@ rather than feature parity with the Node.js or Python versions.
 mvn -f BullMQJava/pom.xml test
 ```
 
+> **Note**
+> The build downloads Maven plugins and dependencies from Maven Central. If
+> your environment proxies or blocks access to https://repo.maven.apache.org
+> you may see `403 Forbidden` errors during the first run. Point Maven at an
+> accessible mirror (for example by adding a `<mirror>` entry to your
+> `~/.m2/settings.xml`) or populate a local repository before running the
+> build.
+
 Add the dependency to your own Maven project by installing the artifact locally
 and referencing it as `io.bullmq:bullmq-java`.
 
